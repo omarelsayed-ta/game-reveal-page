@@ -34,54 +34,52 @@ export const HeroSection = () => {
           <div className="text-center lg:text-left space-y-8">
             <div className="inline-block">
               <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-black text-black uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]">
-                Coming Soon 2025
+                قريبا في الأسواق 2025
               </span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight">
               <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-                Enter the Ultimate
+                نافس في لعبة
               </span>
               <br />
               <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse">
-                Battle Arena
+                سوبر بلوت
               </span>
             </h1>
 
             <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold">
-              Experience next-generation mobile gaming with stunning graphics, 
-              strategic gameplay, and epic battles. Pre-register now and be among 
-              the first to dominate.
+             سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
+              تلعبها مع خويك أو ضد محترفين من كل المملكة.
+               كل فوز يقربك من دوري النخبة،
+                ومع نظام عادل يمنع الغش بتعيش أجواء تحدي أصيلة.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="lg" className="group" onClick={handlePreRegister}>
                 
                 <Bell className="mr-2 h-5 w-5" />
-                Pre-Register Now
+                سجل الآن!
                 
 
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
-              <Button variant="outline" size="lg" className="border-primary border-2 hover:bg-primary/20 text-primary font-bold uppercase">
-                Watch Trailer
-              </Button>
             </div>
 
             {/* Stats */}
             <div className="flex gap-8 justify-center lg:justify-start pt-8">
               <div className="relative">
                 <div className="text-3xl font-black text-primary drop-shadow-[0_0_20px_rgba(184,255,0,0.6)]">50K+</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">Pre-Registered</div>
+                <div className="text-sm text-gray-400 font-bold uppercase">عدد المسجلين</div>
               </div>
               <div className="relative">
                 <div className="text-3xl font-black text-primary drop-shadow-[0_0_20px_rgba(184,255,0,0.6)]">4.9★</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">Expected Rating</div>
+                <div className="text-sm text-gray-400 font-bold uppercase">التقييم المتوقع</div>
               </div>
               <div className="relative">
-                <div className="text-3xl font-black text-primary drop-shadow-[0_0_20px_rgba(184,255,0,0.6)]">100+</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">Heroes</div>
+                <div className="text-3xl font-black text-primary drop-shadow-[0_0_20px_rgba(184,255,0,0.6)]">62</div>
+                <div className="text-sm text-gray-400 font-bold uppercase">الأيام المتبقية</div>
               </div>
             </div>
           </div>
