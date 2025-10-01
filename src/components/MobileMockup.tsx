@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import gameHero from "@/assets/game-hero.jpg";
+import gameHero from "@/assets/game-hero.png";
 
 interface MobileMockupProps {
   className?: string;

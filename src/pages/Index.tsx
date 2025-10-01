@@ -1,8 +1,8 @@
 import { HeroSection } from "@/components/HeroSection";
 import { FeatureSection } from "@/components/FeatureSection";
-import feature1 from "@/assets/feature-1.jpg";
-import feature2 from "@/assets/feature-2.jpg";
-import feature3 from "@/assets/feature-3.jpg";
+import feature1 from "@/assets/feature-1.png";
+import feature2 from "@/assets/feature-2.png";
+import feature3 from "@/assets/feature-3.png";
 
 const Index = () => {
   return (
