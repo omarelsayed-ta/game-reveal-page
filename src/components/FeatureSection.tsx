@@ -10,42 +10,45 @@ interface FeatureSectionProps {
 export const FeatureSection = ({ title, description, image, reverse }: FeatureSectionProps) => {
   return (
     <section className="py-20 relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      {/* Background pattern */}
+      <div className="absolute inset-0 diagonal-stripes opacity-5" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 items-center justify-center">
           {/* Portrait Image - Always on left on desktop */}
           <div className="relative group lg:w-[320px] flex-shrink-0">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-300">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 transform group-hover:scale-[1.02] transition-transform duration-300 border-2 border-primary/30">
               <img 
                 src={image} 
                 alt={title} 
                 className="w-full h-auto"
               />
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
             </div>
             
-            {/* Glow Effect */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-2xl -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            {/* Intense Glow Effect */}
+            <div className="absolute -inset-4 bg-primary/30 rounded-3xl blur-2xl -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
           {/* Content - Always beside image */}
           <div className="space-y-6 flex-1 max-w-xl">
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
               {title}
             </h2>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed font-medium">
               {description}
             </p>
 
             <div className="flex gap-4 pt-4">
-              <div className="flex-1 p-4 rounded-lg bg-card border border-primary/20">
-                <div className="text-2xl font-bold text-primary">60 FPS</div>
-                <div className="text-sm text-muted-foreground">Smooth Gameplay</div>
+              <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">
+                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">60 FPS</div>
+                <div className="text-sm text-gray-400 font-bold uppercase">Smooth Gameplay</div>
               </div>
-              <div className="flex-1 p-4 rounded-lg bg-card border border-secondary/20">
-                <div className="text-2xl font-bold text-secondary">HD</div>
-                <div className="text-sm text-muted-foreground">Graphics</div>
+              <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">
+                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">HD</div>
+                <div className="text-sm text-gray-400 font-bold uppercase">Graphics</div>
               </div>
             </div>
           </div>

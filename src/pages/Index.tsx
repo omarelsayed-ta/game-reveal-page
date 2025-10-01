@@ -29,28 +29,29 @@ const Index = () => {
       />
 
       {/* Footer */}
-      <footer className="relative py-20 border-t border-border/50">
+      <footer className="relative py-20 border-t border-primary/20">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/5" />
+        <div className="absolute inset-0 diagonal-stripes opacity-5" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h3 className="text-3xl font-bold mb-4">Ready to Begin Your Journey?</h3>
-          <p className="text-muted-foreground mb-8">Pre-register now and get exclusive launch rewards!</p>
+          <h3 className="text-3xl font-black mb-4 uppercase text-white">Ready to Begin Your Journey?</h3>
+          <p className="text-gray-300 mb-8 font-semibold">Pre-register now and get exclusive launch rewards!</p>
           
-          <div className="flex gap-4 justify-center mb-12">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+          <div className="flex gap-6 justify-center mb-12">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors font-bold uppercase text-sm hover:drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">
               Discord
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors font-bold uppercase text-sm hover:drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">
               Twitter
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors font-bold uppercase text-sm hover:drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">
               Instagram
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="#" className="text-gray-400 hover:text-primary transition-colors font-bold uppercase text-sm hover:drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">
               YouTube
             </a>
           </div>
           
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-gray-500 font-semibold">
             © 2025 Your Game Studio. All rights reserved.
           </p>
         </div>
