@@ -3,6 +3,14 @@ import { MobileMockup } from "./MobileMockup";
 import { ArrowRight, Bell } from "lucide-react";
 
 export const HeroSection = () => {
+  const handlePreRegister = () => {
+    // TikTok pixel custom event
+    window.ttq?.track("ClickButton", {
+      button_name: "Pre-Register",
+    });
+    // (optional) you can also do navigation or open a modal here
+    // e.g., window.location.href = "/pre-register";
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background with Diagonal Stripes */}
@@ -47,9 +55,12 @@ export const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="group">
+              <Button variant="hero" size="lg" className="group" onClick={handlePreRegister}>
+                
                 <Bell className="mr-2 h-5 w-5" />
                 Pre-Register Now
+                
+
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
