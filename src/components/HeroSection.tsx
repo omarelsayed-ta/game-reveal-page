@@ -64,14 +64,14 @@ export const HeroSection = () => {
                 ومع نظام عادل يمنع الغش بتعيش أجواء تحدي أصيلة.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start font-kufam">
               <Button
                 variant="hero"
                 size="lg"
-                className="group"
+                className="group font-kufam"
                 onClick={handlePreRegisterClick}
               >
-                <Bell className="mr-2 h-5 w-5 font-cairo"  />
+                <Bell className="mr-2 h-5 w-5"  />
                 !سجل الآن
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
