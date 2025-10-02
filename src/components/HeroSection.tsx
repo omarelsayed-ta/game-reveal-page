@@ -44,31 +44,31 @@ export const HeroSection = () => {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight">
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam" >
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-cairo" >
                 سجل الآن في لعبة
               </span>
               <br />
-              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam" >
+              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-cairo" >
                 سوبر بلوت
               </span>
               <br />
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam" >
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-cairo" >
                 والعبها قبل الجميع
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-cairo">
+            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-kufam">
              سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
               تلعبها مع خويك أو ضد محترفين من كل المملكة.
                كل فوز يقربك من دوري النخبة،
                 ومع نظام عادل يمنع الغش بتعيش أجواء تحدي أصيلة.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start font-kufam">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start font-cairo">
               <Button
                 variant="hero"
                 size="lg"
-                className="group font-kufam"
+                className="group font-cairo"
                 onClick={handlePreRegisterClick}
               >
                 <Bell className="mr-2 h-5 w-5"  />
