@@ -1,15 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { MobileMockup } from "./MobileMockup";
 import { ArrowRight, Bell } from "lucide-react";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 export const HeroSection = () => {
-  const handlePreRegister = () => {
-    // TikTok pixel custom event
-    window.ttq?.track("ClickButton", {
-      button_name: "Pre-Register",
-    });
-    // (optional) you can also do navigation or open a modal here
-    // e.g., window.location.href = "/pre-register";
+   const [open, setOpen] = useState(false);
+
+  const handlePreRegisterClick = () => {
+    // 1) Track TikTok event
+    window.ttq?.track("ClickButton", { button_name: "Pre-Register" });
+
+    // 2) Open the modal with the Google Form
+    setOpen(true);
   };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -48,7 +56,7 @@ export const HeroSection = () => {
               </span>
               <br />
               <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-                وألعبها قبل الجميع
+                والعبها قبل الجميع
               </span>
             </h1>
 
@@ -60,12 +68,14 @@ export const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="group" onClick={handlePreRegister}>
-                
+              <Button
+                variant="hero"
+                size="lg"
+                className="group"
+                onClick={handlePreRegisterClick}
+              >
                 <Bell className="mr-2 h-5 w-5" />
-                سجل الآن!
-                
-
+                Pre-Register Now
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -94,6 +104,20 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
+
+       {/* Modal with embedded Google Form */}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="max-w-3xl h-[90vh] p-0">
+          <DialogHeader>
+            <DialogTitle className="p-4">Pre-Register</DialogTitle>
+          </DialogHeader>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
+          width="100%"
+            height="100%"
+            style={{ border: "none" }}
+          />
+        </DialogContent>
+      </Dialog>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
