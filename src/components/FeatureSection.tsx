@@ -43,7 +43,7 @@ export const FeatureSection = ({ title, description, image, reverse }: FeatureSe
 
             <div className="flex gap-4 pt-4">
               <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">
-                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">درجات 10</div>
+                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">عشر درجات</div>
                 <div className="text-sm text-gray-400 font-bold uppercase">في دوري النخبة</div>
               </div>
               <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">

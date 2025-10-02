@@ -10,32 +10,32 @@ const Index = () => {
       <HeroSection />
       
       <FeatureSection 
-        title=":trophy: اربح أكثر لين توصل دوري النخبة"
+        title="اربح أكثر لين توصل دوري النخبة"
         description="كل فوز يقربك خطوة من القمة، ارفع رُتبك واثبت إنك تستاهل مكانك بين نخبة لاعبين البلوت"
         image={feature1}
       />
 
       <FeatureSection 
-        title=":game_die: توزيع عادل وما في غش"
+        title="توزيع عادل وما في غش"
         description="توزيع الورق يعتمد على نظام ذكي يمنع أي تلاعب ويضمن إن كل جولة عادلة وتنافسية %100"
         image={feature2}
         reverse
       />
 
       <FeatureSection 
-        title=":sparkles: استخدم كروت المخاطرة  لتضاعف مكاسبك"
+        title="استخدم كروت المخاطرة  لتضاعف مكاسبك"
         description="جازف باستخدام كروت المخاطرة، وإذا لعبتها صح راح تكبر أرباحك وتضاعف نقاطك"
         image={feature3}
       />
 
       <FeatureSection 
-        title=":zap: أسرع رتم بلوت جرّبته بحياتك"
+        title="أسرع رتم بلوت جرّبته بحياتك"
         description="استمتع بجولات سريعة ومليانة حماس، تلعب أكثر بوقت أقل وتفوز أسرع من أي لعبة ثانية"
         image={feature3}
       />
 
       <FeatureSection  
-        title=":handshake:تواصل مع خويك بسهولة"
+        title="تواصل مع خويك بسهولة"
         description="ا تحتاج مايك ولا كتابة، بنقرة وحدة ترسل إشارة وتفهم خويك فورًا داخل اللعب"
         image={feature3}
       />

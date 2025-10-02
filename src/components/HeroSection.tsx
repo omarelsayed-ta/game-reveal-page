@@ -75,7 +75,7 @@ export const HeroSection = () => {
                 onClick={handlePreRegisterClick}
               >
                 <Bell className="mr-2 h-5 w-5" />
-                Pre-Register Now
+                !سجل الآن
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -111,11 +111,12 @@ export const HeroSection = () => {
           <DialogHeader>
             <DialogTitle className="p-4">Pre-Register</DialogTitle>
           </DialogHeader>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
-          width="100%"
-            height="100%"
-            style={{ border: "none" }}
-          />
+         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
+            width="100%"
+            height="60%"
+            style={{ border: "none" }}>
+
+            </iframe>
         </DialogContent>
       </Dialog>
 
