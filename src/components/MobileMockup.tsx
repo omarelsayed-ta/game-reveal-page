@@ -58,8 +58,8 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
             <DialogTitle className="p-4">!سجل الآن</DialogTitle>
           </DialogHeader>
          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
-            width="640"
-            height="1080"
+            width="100%"
+            height="100%"
             style={{ border: "none" }}>
 
             </iframe>
