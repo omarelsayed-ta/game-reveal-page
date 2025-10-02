@@ -40,7 +40,7 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
             />
             {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-              <div className="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center shadow-lg hover:scale-111 transition-transform cursor-pointer"  onClick={handlePreRegisterClick}>
+              <div className="w-16 h-16 rounded-full bg-black flex items-center justify-center shadow-lg hover:scale-111 transition-transform cursor-pointer"  onClick={handlePreRegisterClick}>
                 <div className="w-0 h-0 border-l-[20px] border-l-primary border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1" />
               </div>
             </div>
