@@ -6,7 +6,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Button } from "react-day-picker";
 interface FeatureSectionProps {
   title: string;
   description: string;
@@ -56,13 +55,13 @@ export const FeatureSection = ({ title, description, image, reverse }: FeatureSe
               {description}
             </p>
 
-            <Button className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4">
               <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]"  onClick={handlePreRegisterClick}>
                 <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)] font-kufam">سجل الآن!</div>
                 <div className="text-sm text-gray-400 font-bold uppercase font-kufam" >لتحصل عليها قبل الجميع</div>
               </div>
              
-            </Button>
+            </div>
                {/* Modal with embedded Google Form */}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-3xl h-[90vh] p-0">

@@ -34,7 +34,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-3 md:py-5 relative z-10">
+      <div className="container mx-auto px-4 py-6 md:py-10 relative z-10">
         {/* Logo Space */}
         <div className="flex justify-center mb-8 md:mb-12">
         <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm flex items-center justify-center overflow-hidden">
@@ -59,7 +59,7 @@ export const HeroSection = () => {
               dir="rtl"
               className="text-3xl md:text-5xl font-black leading-tight uppercase tracking-tight text-right">
               <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam">
-                سجل الآن في
+                سجل الآن في لعبة
               </span>
               <br />
               <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam">
