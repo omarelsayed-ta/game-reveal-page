@@ -8,6 +8,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import logo from "@/assets/logo.png";
 
 export const HeroSection = () => {
    const [open, setOpen] = useState(false);
@@ -36,26 +37,30 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         {/* Logo Space */}
         <div className="flex justify-center mb-8 md:mb-12">
-          <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm border-2 border-primary/30 rounded-2xl flex items-center justify-center">
-            <span className="text-primary/40 text-sm font-kufam">شعار اللعبة</span>
-          </div>
+        <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm border-2 border-primary/30 rounded-2xl flex items-center justify-center overflow-hidden">
+        <img
+          src="@/assets/logo.png"   // 👈 replace with your image path
+          alt="شعار اللعبة"
+          className="object-contain w-full h-full"
+        />
+        </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="text-center lg:text-left space-y-6 md:space-y-8">
+          <div className="text-center lg:text-left space-y-6 md:space-y-8" dir='rtl'>
             <div className="inline-block">
-              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]">
+              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]" >
                 قريبا في الأسواق 2025
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight" dir='rtl'>
               <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam" >
                 سجل الآن في لعبة
               </span>
               <br />
-              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam" >
+              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam"  >
                 سوبر بلوت
               </span>
               <br />
@@ -64,7 +69,7 @@ export const HeroSection = () => {
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-cairo">
+            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-cairo" dir='rtl'>
              سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
               تلعبها مع خويك أو ضد محترفين من كل المملكة.
                كل فوز يقربك من دوري النخبة،
