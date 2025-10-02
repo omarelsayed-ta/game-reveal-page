@@ -34,7 +34,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
+      <div className="container mx-auto px-4 py-6 md:py-10 relative z-10">
         {/* Logo Space */}
         <div className="flex justify-center mb-8 md:mb-12">
         <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm flex items-center justify-center overflow-hidden">
@@ -50,14 +50,14 @@ export const HeroSection = () => {
           {/* Left Content */}
           <div className="text-center lg:text-right space-y-6 md:space-y-8" dir='rtl'>
             <div className="inline-block">
-              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]" >
+              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)] font-cairo" >
                 قريبا في الأسواق 2025
               </span>
             </div>
 
            <h1
               dir="rtl"
-              className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight text-right">
+              className="text-3xl md:text-5xl font-black leading-tight uppercase tracking-tight text-right">
               <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam">
                 سجل الآن في لعبة
               </span>

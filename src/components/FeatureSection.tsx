@@ -1,5 +1,11 @@
 import { cn } from "@/lib/utils";
-
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 interface FeatureSectionProps {
   title: string;
   description: string;
@@ -8,6 +14,15 @@ interface FeatureSectionProps {
 }
 
 export const FeatureSection = ({ title, description, image, reverse }: FeatureSectionProps) => {
+  const [open, setOpen] = useState(false);
+  
+    const handlePreRegisterClick = () => {
+      // 1) Track TikTok event
+      window.ttq?.track("ClickButton", { button_name: "Pre-Register" });
+  
+      // 2) Open the modal with the Google Form
+      setOpen(true);
+    };
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Background pattern */}
@@ -41,12 +56,26 @@ export const FeatureSection = ({ title, description, image, reverse }: FeatureSe
             </p>
 
             <div className="flex gap-4 pt-4">
-              <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">
+              <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]"  onClick={handlePreRegisterClick}>
                 <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)] font-kufam">سجل الآن!</div>
-                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">لتحصل عليها قبل الجميع</div>
+                <div className="text-sm text-gray-400 font-bold uppercase font-kufam" >لتحصل عليها قبل الجميع</div>
               </div>
              
             </div>
+               {/* Modal with embedded Google Form */}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="max-w-3xl h-[90vh] p-0">
+          <DialogHeader>
+            <DialogTitle className="p-4 font-kufam">سجل الآن!</DialogTitle>
+          </DialogHeader>
+         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
+            width="100%"
+            height="100%"
+            style={{ border: "none" }}>
+
+            </iframe>
+        </DialogContent>
+      </Dialog>
           </div>
         </div>
       </div>
