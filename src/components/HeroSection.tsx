@@ -109,11 +109,11 @@ export const HeroSection = () => {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-3xl h-[90vh] p-0">
           <DialogHeader>
-            <DialogTitle className="p-4">Pre-Register</DialogTitle>
+            <DialogTitle className="p-4">!سجل الآن</DialogTitle>
           </DialogHeader>
          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
-            width="100%"
-            height="60%"
+            width="640"
+            height="1230"
             style={{ border: "none" }}>
 
             </iframe>

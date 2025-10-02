@@ -1,11 +1,27 @@
 import { cn } from "@/lib/utils";
 import gameHero from "@/assets/game-hero.png";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 interface MobileMockupProps {
   className?: string;
 }
 
 export const MobileMockup = ({ className }: MobileMockupProps) => {
+  const [open, setOpen] = useState(false);
+
+  const handlePreRegisterClick = () => {
+    // 1) Track TikTok event
+    window.ttq?.track("ClickButton", { button_name: "Pre-Register" });
+
+    // 2) Open the modal with the Google Form
+    setOpen(true);
+  };
   return (
     <div className={cn("relative", className)}>
       {/* Phone Frame */}
@@ -21,6 +37,7 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
               src={gameHero} 
               alt="Game preview" 
               className="w-full h-full object-cover animate-pulse"
+              onClick={handlePreRegisterClick}
             />
             {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
