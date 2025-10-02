@@ -44,20 +44,20 @@ export const HeroSection = () => {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight">
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]" className="font-kufam">
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam" >
                 سجل الآن في لعبة
               </span>
               <br />
-              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse" className="font-kufam">
+              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam" >
                 سوبر بلوت
               </span>
               <br />
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]" className="font-kufam">
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam" >
                 والعبها قبل الجميع
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold" className="font-cairo">
+            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-cairo">
              سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
               تلعبها مع خويك أو ضد محترفين من كل المملكة.
                كل فوز يقربك من دوري النخبة،
@@ -71,7 +71,7 @@ export const HeroSection = () => {
                 className="group"
                 onClick={handlePreRegisterClick}
               >
-                <Bell className="mr-2 h-5 w-5" className="font-kufam" />
+                <Bell className="mr-2 h-5 w-5 font-cairo"  />
                 !سجل الآن
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -82,15 +82,15 @@ export const HeroSection = () => {
             <div className="flex gap-8 justify-center lg:justify-start pt-8">
               <div className="relative">
                 <div className="text-3xl font-black text-primary drop-shadow-[0_0_20px_rgba(184,255,0,0.6)]">50K+</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">عدد المسجلين</div>
+                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">عدد المسجلين</div>
               </div>
               <div className="relative">
                 <div className="text-3xl font-black text-primary drop-shadow-[0_0_20px_rgba(184,255,0,0.6)]">4.9★</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">التقييم المتوقع</div>
+                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">التقييم المتوقع</div>
               </div>
               <div className="relative">
                 <div className="text-3xl font-black text-primary drop-shadow-[0_0_20px_rgba(184,255,0,0.6)]">62</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">الأيام المتبقية</div>
+                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">الأيام المتبقية</div>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ export const HeroSection = () => {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-3xl h-[90vh] p-0">
           <DialogHeader>
-            <DialogTitle className="p-4">!سجل الآن</DialogTitle>
+            <DialogTitle className="p-4 font-kufam">!سجل الآن</DialogTitle>
           </DialogHeader>
          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
             width="100%"

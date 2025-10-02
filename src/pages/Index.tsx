@@ -45,8 +45,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/5" />
         <div className="absolute inset-0 diagonal-stripes opacity-5" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h3 className="text-3xl font-black mb-4 uppercase text-white">مستعد للمنافسة في دوري النخبة؟</h3>
-          <p className="text-gray-300 mb-8 font-semibold">سجل في سوبر بلوت الآن واستعد للمنافسة الأفوى</p>
+          <h3 className="text-3xl font-black mb-4 uppercase text-white font-kufam">مستعد للمنافسة في دوري النخبة؟</h3>
+          <p className="text-gray-300 mb-8 font-semibold font-kufam">سجل في سوبر بلوت الآن واستعد للمنافسة الأفوى</p>
           
          
           

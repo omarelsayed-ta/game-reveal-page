@@ -33,22 +33,22 @@ export const FeatureSection = ({ title, description, image, reverse }: FeatureSe
 
           {/* Content - Always beside image */}
           <div className="space-y-6 flex-1 max-w-xl">
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.2)] font-kufam">
               {title}
             </h2>
             
-            <p className="text-lg text-gray-300 leading-relaxed font-medium">
+            <p className="text-lg text-gray-300 leading-relaxed font-medium font-cairo">
               {description}
             </p>
 
             <div className="flex gap-4 pt-4">
               <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">
-                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">عشر درجات</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">في دوري النخبة</div>
+                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)] font-kufam">عشر درجات</div>
+                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">في دوري النخبة</div>
               </div>
               <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">
-                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)]">أسرع رتم</div>
-                <div className="text-sm text-gray-400 font-bold uppercase">لعب في ألعاب بلوت</div>
+                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)] font-kufam">أسرع رتم</div>
+                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">لعب في ألعاب بلوت</div>
               </div>
             </div>
           </div>
