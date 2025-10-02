@@ -33,10 +33,17 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
+        {/* Logo Space */}
+        <div className="flex justify-center mb-8 md:mb-12">
+          <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm border-2 border-primary/30 rounded-2xl flex items-center justify-center">
+            <span className="text-primary/40 text-sm font-kufam">شعار اللعبة</span>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="text-center lg:text-left space-y-8">
+          <div className="text-center lg:text-left space-y-6 md:space-y-8">
             <div className="inline-block">
               <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]">
                 قريبا في الأسواق 2025
