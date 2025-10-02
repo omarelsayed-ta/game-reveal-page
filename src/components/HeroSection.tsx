@@ -24,12 +24,9 @@ export const HeroSection = () => {
       {/* Animated Background with Diagonal Stripes */}
       <div className="absolute inset-0 bg-[var(--gradient-hero)]">
         {/* Diagonal Stripes Overlay */}
-        <div className="absolute inset-0 diagonal-stripes-bold opacity-20" />
-        
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(52, 73, 0, 0.05),transparent_70%)]" />
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse delay-1000" />
+       <div className="absolute inset-0 diagonal-stripes opacity-5" />
+      
+      <div className="container mx-auto px-4 relative z-10">
           
           {/* Additional neon accents */}
           <div className="absolute top-0 right-0 w-full h-32 bg-gradient-to-b from-primary/10 to-transparent" />
