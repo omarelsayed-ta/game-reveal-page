@@ -23,8 +23,7 @@ export const FeatureSection = ({ title, description, image, reverse }: FeatureSe
                 alt={title} 
                 className="w-full h-auto"
               />
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+              
             </div>
             
             {/* Intense Glow Effect */}
