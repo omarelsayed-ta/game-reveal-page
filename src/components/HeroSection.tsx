@@ -38,26 +38,26 @@ export const HeroSection = () => {
           {/* Left Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="inline-block">
-              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-black text-black uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]">
+              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]">
                 قريبا في الأسواق 2025
               </span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight">
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]" className="font-kufam">
                 سجل الآن في لعبة
               </span>
               <br />
-              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse">
+              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse" className="font-kufam">
                 سوبر بلوت
               </span>
               <br />
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]" className="font-kufam">
                 والعبها قبل الجميع
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold">
+            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold" className="font-cairo">
              سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
               تلعبها مع خويك أو ضد محترفين من كل المملكة.
                كل فوز يقربك من دوري النخبة،
@@ -71,7 +71,7 @@ export const HeroSection = () => {
                 className="group"
                 onClick={handlePreRegisterClick}
               >
-                <Bell className="mr-2 h-5 w-5" />
+                <Bell className="mr-2 h-5 w-5" className="font-kufam" />
                 !سجل الآن
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>

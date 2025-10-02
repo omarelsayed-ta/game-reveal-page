@@ -31,7 +31,7 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
         
         {/* Screen Content - Video Placeholder */}
         <div className="absolute inset-0 p-3 pt-8">
-          <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-gradient-to-b from-green-900 to-blue-900">
+          <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-gradient-to-b from-green-900 to-green-600">
             {/* Game Screenshot as Video Placeholder */}
             <img 
               src={gameHero} 
@@ -55,7 +55,7 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-3xl h-[90vh] p-0">
           <DialogHeader>
-            <DialogTitle className="p-4">!سجل الآن</DialogTitle>
+            <DialogTitle className="font-kufam">!سجل الآن</DialogTitle>
           </DialogHeader>
          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
             width="100%"
