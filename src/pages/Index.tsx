@@ -3,6 +3,8 @@ import { FeatureSection } from "@/components/FeatureSection";
 import feature1 from "@/assets/feature-1.png";
 import feature2 from "@/assets/feature-2.png";
 import feature3 from "@/assets/feature-3.png";
+import feature4 from "@/assets/feature-4.png";
+import feature5 from "@/assets/feature-5.png";
 
 const Index = () => {
   return (
@@ -31,13 +33,13 @@ const Index = () => {
       <FeatureSection 
         title="أسرع رتم بلوت جرّبته بحياتك"
         description="استمتع بجولات سريعة ومليانة حماس، تلعب أكثر بوقت أقل وتفوز أسرع من أي لعبة ثانية"
-        image={feature3}
+        image={feature4}
       />
 
       <FeatureSection  
         title="تواصل مع خويك بسهولة"
         description="لا تحتاج مايك ولا كتابة، بنقرة وحدة ترسل إشارة وتفهم خويك فورًا داخل اللعب"
-        image={feature3}
+        image={feature5}
       />
 
       {/* Footer */}
