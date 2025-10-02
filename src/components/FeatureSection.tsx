@@ -17,7 +17,7 @@ export const FeatureSection = ({ title, description, image, reverse }: FeatureSe
         <div className="flex flex-col lg:flex-row gap-12 items-center justify-center">
           {/* Portrait Image - Always on left on desktop */}
           <div className="relative group lg:w-[320px] flex-shrink-0">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 transform group-hover:scale-[1.02] transition-transform duration-300 border-2 border-primary/30">
+            <div className="relative rounded-3xl overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-300 border-2 border-primary/30">
               <img 
                 src={image} 
                 alt={title} 
