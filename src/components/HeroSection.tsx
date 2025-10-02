@@ -37,23 +37,24 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         {/* Logo Space */}
         <div className="flex justify-center mb-8 md:mb-12">
-        <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm border-2 border-primary/30 rounded-2xl flex items-center justify-center overflow-hidden">
+        <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm flex items-center justify-center overflow-hidden">
         <img
           src={logo}   // 👈 replace with your image path
           alt="شعار اللعبة"
           className="object-contain w-full h-full"
         />
         </div>
+         <div className="flex justify-center">
+              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)] font-cairo" >
+                قريبا في الأسواق 2025
+              </span>
+            </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left space-y-6 md:space-y-8" dir='rtl'>
-            <div className="inline-block">
-              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]" >
-                قريبا في الأسواق 2025
-              </span>
-            </div>
+           
 
            <h1
               dir="rtl"
@@ -88,7 +89,7 @@ export const HeroSection = () => {
                 onClick={handlePreRegisterClick}
               >
                 <Bell className="mr-2 h-5 w-5"  />
-                !سجل الآن
+                سجل الآن!
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -122,7 +123,7 @@ export const HeroSection = () => {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-3xl h-[90vh] p-0">
           <DialogHeader>
-            <DialogTitle className="p-4 font-kufam">!سجل الآن</DialogTitle>
+            <DialogTitle className="p-4 font-kufam">سجل الآن!</DialogTitle>
           </DialogHeader>
          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
             width="100%"

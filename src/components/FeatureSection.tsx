@@ -42,8 +42,8 @@ export const FeatureSection = ({ title, description, image, reverse }: FeatureSe
 
             <div className="flex gap-4 pt-4">
               <div className="flex-1 p-4 rounded-lg bg-card border-2 border-primary/40 shadow-[0_0_20px_rgba(184,255,0,0.2)]">
-                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)] font-kufam">!سجل الآن</div>
-                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">لتلعبها قبل الجميع</div>
+                <div className="text-2xl font-black text-primary drop-shadow-[0_0_10px_rgba(184,255,0,0.8)] font-kufam">سجل الآن!</div>
+                <div className="text-sm text-gray-400 font-bold uppercase font-kufam">لتحصل عليها قبل الجميع</div>
               </div>
              
             </div>
