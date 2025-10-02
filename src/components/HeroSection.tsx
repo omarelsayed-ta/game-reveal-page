@@ -39,7 +39,7 @@ export const HeroSection = () => {
         <div className="flex justify-center mb-8 md:mb-12">
         <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm border-2 border-primary/30 rounded-2xl flex items-center justify-center overflow-hidden">
         <img
-          src="@/assets/logo.png"   // 👈 replace with your image path
+          src={logo}   // 👈 replace with your image path
           alt="شعار اللعبة"
           className="object-contain w-full h-full"
         />
@@ -55,25 +55,29 @@ export const HeroSection = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight" dir='rtl'>
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam" >
+           <h1
+              dir="rtl"
+              className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight text-right">
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam">
                 سجل الآن في لعبة
               </span>
               <br />
-              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam"  >
+              <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam">
                 سوبر بلوت
               </span>
               <br />
-              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam" >
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam">
                 والعبها قبل الجميع
               </span>
             </h1>
 
-            <p className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-cairo" dir='rtl'>
-             سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
+            <p
+              dir="rtl"
+              className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-cairo text-right">
+              سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
               تلعبها مع خويك أو ضد محترفين من كل المملكة.
-               كل فوز يقربك من دوري النخبة،
-                ومع نظام عادل يمنع الغش بتعيش أجواء تحدي أصيلة.
+              كل فوز يقربك من دوري النخبة،
+              ومع نظام عادل يمنع الغش بتعيش أجواء تحدي أصيلة.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start font-kufam">
