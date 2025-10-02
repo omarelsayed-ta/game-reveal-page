@@ -34,7 +34,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-6 md:py-10 relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         {/* Logo Space */}
         <div className="flex justify-center mb-8 md:mb-12">
         <div className="w-32 h-32 md:w-40 md:h-40 bg-background/10 backdrop-blur-sm flex items-center justify-center overflow-hidden">
@@ -75,7 +75,6 @@ export const HeroSection = () => {
               dir="rtl"
               className="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0 font-semibold font-cairo text-right">
               سوبر بلوت هي أسرع لعبة بلوت سعودية أونلاين،
-              تلعبها مع خويك أو ضد محترفين من كل المملكة.
               كل فوز يقربك من دوري النخبة،
               ومع نظام عادل يمنع الغش بتعيش أجواء تحدي أصيلة.
             </p>
