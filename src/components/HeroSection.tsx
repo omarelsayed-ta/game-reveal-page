@@ -59,7 +59,7 @@ export const HeroSection = () => {
               dir="rtl"
               className="text-3xl md:text-5xl font-black leading-tight uppercase tracking-tight text-right">
               <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] font-kufam">
-                سجل الآن في لعبة
+                سجل الآن في
               </span>
               <br />
               <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse font-kufam">
