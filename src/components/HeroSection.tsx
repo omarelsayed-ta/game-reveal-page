@@ -44,17 +44,16 @@ export const HeroSection = () => {
           className="object-contain w-full h-full"
         />
         </div>
-         <div className="flex justify-center">
-              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)] font-cairo" >
-                قريبا في الأسواق 2025
-              </span>
-            </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="text-center lg:text-left space-y-6 md:space-y-8" dir='rtl'>
-           
+          <div className="text-center lg:text-right space-y-6 md:space-y-8" dir='rtl'>
+            <div className="inline-block">
+              <span className="px-4 py-2 rounded-full bg-primary/30 border-2 border-primary text-sm font-white text-white uppercase tracking-wider backdrop-blur-sm shadow-[var(--glow-primary)]" >
+                قريبا في الأسواق 2025
+              </span>
+            </div>
 
            <h1
               dir="rtl"
