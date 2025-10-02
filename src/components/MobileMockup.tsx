@@ -15,7 +15,7 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
         
         {/* Screen Content - Video Placeholder */}
         <div className="absolute inset-0 p-3 pt-8">
-          <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-gradient-to-b from-purple-900 to-blue-900">
+          <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-gradient-to-b from-green-900 to-blue-900">
             {/* Game Screenshot as Video Placeholder */}
             <img 
               src={gameHero} 
