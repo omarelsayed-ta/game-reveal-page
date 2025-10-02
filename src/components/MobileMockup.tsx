@@ -37,11 +37,10 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
               src={gameHero} 
               alt="Game preview" 
               className="w-full h-full object-cover animate-pulse"
-              onClick={handlePreRegisterClick}
             />
             {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-              <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:scale-111 transition-transform cursor-pointer">
+              <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:scale-111 transition-transform cursor-pointer"  onClick={handlePreRegisterClick}>
                 <div className="w-0 h-0 border-l-[20px] border-l-primary border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1" />
               </div>
             </div>
@@ -51,6 +50,21 @@ export const MobileMockup = ({ className }: MobileMockupProps) => {
         {/* Home Indicator */}
         <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-gray-600 rounded-full" />
       </div>
+
+       {/* Modal with embedded Google Form */}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="max-w-3xl h-[90vh] p-0">
+          <DialogHeader>
+            <DialogTitle className="p-4">!سجل الآن</DialogTitle>
+          </DialogHeader>
+         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfer-oe8mOWszZ8dAIXPCy6VTOxEHV9JFj9jbgGHhSwV0lxUw/viewform?embedded=true" 
+            width="640"
+            height="1080"
+            style={{ border: "none" }}>
+
+            </iframe>
+        </DialogContent>
+      </Dialog>
 
       {/* Glow Effect */}
       <div className="absolute inset-0 -z-10 blur-3xl opacity-50">
