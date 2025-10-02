@@ -40,11 +40,15 @@ export const HeroSection = () => {
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight uppercase tracking-tight">
               <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-                نافس في لعبة
+                سجل الآن في لعبة
               </span>
               <br />
               <span className="text-primary drop-shadow-[0_0_50px_rgba(184,255,0,0.8)] animate-pulse">
                 سوبر بلوت
+              </span>
+              <br />
+              <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+                وألعبها قبل الجميع
               </span>
             </h1>
 
