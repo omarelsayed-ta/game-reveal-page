@@ -15,7 +15,7 @@ export const HeroSection = () => {
 
   const handlePreRegisterClick = () => {
     // 1) Track TikTok event
-    window.ttq?.track("ClickButton", { button_name: "Pre-Register" });
+    window.ttq?.track("Download", { button_name: "Pre-Register" });
 
     // 2) Open the modal with the Google Form
     setOpen(true);
